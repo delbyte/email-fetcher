@@ -1,17 +1,67 @@
+# Backend
 backend/venv/
-
+backend/.env
+backend/database.db
 __pycache__/
 *.pyc
 *.pyo
 
-backend/.env
+# Frontend
 frontend/.env.local
-
 frontend/.next/
 frontend/node_modules/
 
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js
+/.next/
+out/
+
+# Build & Production
+/build
+.vercel
+.nuxt
+dist
+
+# Logs & Debugging
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing & Coverage
+/coverage
+.nyc_output
+*.lcov
+
+# Miscellaneous
 .DS_Store
 Thumbs.db
+*.pem
+.env*
+.env.development.local
+.env.test.local
+.env.production.local
+.cache
+.parcel-cache
+.temp
+.vscode-test
+.pnp.*
 
-backend/database.db
+# Ignore serverless and DynamoDB local files
+.serverless/
+.dynamodb/
